@@ -1,0 +1,46 @@
+<form>
+    <h1>DELETE VEHICLE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="car.make" type="text" name="make" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Model</mat-label>
+        <textarea matInput [(ngModel)]="car.model" type="text" name="model" disabled></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Color</mat-label>
+        <textarea matInput [(ngModel)]="car.color" type="text" name="color" disabled></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Year</mat-label>
+        <textarea matInput [(ngModel)]="car.year" type="text" name="year" disabled></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Price</mat-label>
+        <textarea matInput [(ngModel)]="car.price" type="text" name="price" disabled></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Mileage</mat-label>
+        <textarea matInput [(ngModel)]="car.mileage" type="text" name="mileage" disabled></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="car.description" type="text" name="description" disabled></textarea>
+    </mat-form-field>
+
+     
+        
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETE </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCEL </button>
+    </div>
+
+</form>

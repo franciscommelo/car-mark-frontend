@@ -1,0 +1,44 @@
+<form>
+    <h1>ADD NEW VEHICLE</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Make</mat-label>
+        <input matInput [(ngModel)]="car.make" type="text" name="name" placeholder="Ferrari">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Model</mat-label>
+        <textarea matInput  type="text" name="model" placeholder="California"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Color</mat-label>
+        <textarea matInput  type="text" name="color" placeholder="Red"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Year</mat-label>
+        <textarea matInput  type="text" name="year" placeholder="2021"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Price</mat-label>
+        <textarea matInput type="text" name="price" placeholder="1299"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Mileage</mat-label>
+        <textarea matInput  type="text" name="mileage" placeholder="200000"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Description</mat-label>
+        <textarea matInput  type="text" name="description" placeholder=""></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CREATE </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCEL </button>
+    </div>
+
+</form>

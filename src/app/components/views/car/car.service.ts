@@ -19,7 +19,7 @@ export class CarService {
   
   findAll():Observable<ResponseMessage> {
     const url = `${this.baseUrl}/`
-    return this.http.get<ResponseMessage>("http://localhost:8080/api/v1/car/")
+    return this.http.get<ResponseMessage>(`${this.baseUrl}/`)
   }
 
    

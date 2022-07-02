@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  baseUrl: 'http://localhost:8080/api/v1/car'
+  baseUrl: 'https://vehicle-manager-backend.herokuapp.com/api/v1/car'
 };
 
 /*

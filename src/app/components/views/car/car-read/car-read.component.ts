@@ -31,7 +31,7 @@ export class CarReadComponent implements OnInit {
     this.service.findAll().subscribe(resposta => {
       
       console.log(resposta.data.cars);
-      this.car = resposta.data.cars;
+      this.cars = resposta.data.cars;
       
     });
   }

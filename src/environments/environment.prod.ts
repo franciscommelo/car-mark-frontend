@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://mybookstore-api.herokuapp.com/'
+  baseUrl: 'https://vehicle-manager-backend.herokuapp.com/api/v1/car'
 };

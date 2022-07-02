@@ -29,7 +29,7 @@ export class CarCreateComponent implements OnInit {
   create(): void {
     this.service.create(this.car).subscribe((resposta) => {
       this.router.navigate(['car'])
-      this.service.mensagem('Categoria criada com sucesso!');
+      this.service.mensagem('car succesfuly added!');
     }, err => {
       for(let i = 0; i < err.error.errors.length; i++) {
         this.service.mensagem(err.error.errors[i].message)
